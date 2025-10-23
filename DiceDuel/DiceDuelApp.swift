@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct DiceDuelApp: App {
+    @State private var viewModel = GameViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StartGameView()
+                .environment(viewModel)
         }
     }
 }
