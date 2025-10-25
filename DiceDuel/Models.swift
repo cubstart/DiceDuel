@@ -7,11 +7,6 @@
 
 import Foundation
 
-enum GameViewState {
-    case start
-    case game
-}
-
 struct DiceConfiguration {
     var minValue: Int
     var maxValue: Int
